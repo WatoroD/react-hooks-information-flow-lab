@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Header = ({ onDarkModeClick }) => {
+function Header({ onDarkModeClick }) {
   return (
     <header>
       <h2>Shopster</h2>
       <button onClick={onDarkModeClick}>
-        Toggle Dark Mode
+        {onDarkModeClick ? "Dark" : "Light"} Mode
       </button>
     </header>
   );
-};
+}
 
 export default Header;
